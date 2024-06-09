@@ -23,3 +23,36 @@ Define a threshold (commonly 3). Keep only the data points with absolute z-score
 5. **Z-score Method**: Same steps as Normal Distribution but without the absolute value.
 
 Each method carries its strengths and limitations, necessitating careful consideration of the data characteristics and analytical requirements. By employing appropriate outlier detection techniques, analysts can enhance the accuracy and validity of their analyses, facilitating informed decision-making based on dependable data.
+
+Hypothesis testing serves as a foundational statistical technique for drawing inferences about population parameters using sample data. It encompasses the formulation of competing hypotheses—the null hypothesis (H0) and the alternative hypothesis (Ha)—and their evaluation through empirical evidence. The null hypothesis posits no significant difference or effect, whereas the alternative hypothesis contends the presence of a significant difference or effect. By rigorously assessing the strength of evidence against the null hypothesis, hypothesis testing aids in determining the statistical significance of observed results across various domains, such as science, medicine, economics, and social sciences.
+
+Key Steps in Hypothesis Testing:
+1. **State the Hypotheses**: 
+   - Null Hypothesis (H0): Represents the default assumption.
+   - Alternative Hypothesis (Ha): Expresses the researcher's inquiry.
+
+2. **Choose a Significance Level (α)**:
+   - The significance level (α) denotes the probability of erroneously rejecting the null hypothesis when it holds true.
+
+3. **Select the Appropriate Test Statistic**:
+   - Tailoring the test statistic to the data type, sample size, and hypothesis under examination.
+
+4. **Collect Data and Calculate the Test Statistic**:
+   - Sample collection from the target population, followed by test statistic computation using the sample data.
+
+5. **Determine the Critical Region or Critical Value**:
+   - Identifying critical regions or values from the sampling distribution based on the chosen α and H0.
+
+6. **Make a Decision**:
+   - Comparing the computed test statistic against critical values or regions.
+   - Rejecting H0 if the test statistic falls within the critical region; otherwise, failing to reject H0.
+
+7. **Interpret the Results**:
+   - Contextualizing the decision within the research question's framework.
+   - Drawing conclusions regarding the population parameter.
+
+8. **Conclusion**:
+   - Stating the outcome, including whether H0 was rejected or retained.
+   - Emphasizing that hypothesis testing provides evidence rather than absolute truth.
+
+It's noteworthy that hypothesis testing does not offer definitive proof of H0's veracity or falsehood. Instead, it furnishes evidence supporting or refuting H0, contingent upon observed data and the chosen significance level. Furthermore, hypothesis testing constitutes just one facet of statistical inference, alongside estimation and prediction, in elucidating population characteristics from sample data.
