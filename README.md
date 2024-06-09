@@ -10,14 +10,16 @@ The choice of outlier detection method should consider the data context and anal
 
 Outlined below are common methods for outlier detection:
 
-1. **Mean Function**: Computes the mean and standard deviation of a dataset. Outliers are defined as data points lying beyond a specified range around the mean (commonly ±3 standard deviations), and are subsequently removed or addressed.
+1. **Mean Function**: Calculate the mean and standard deviation of the 'price_per_sqft' column. Define a range around the mean (commonly ±3 standard deviations). Keep only the data points within this range.
 
-2. **Percentile Method (IQR)**: Calculates the first quartile (Q1) and third quartile (Q3), determining the Interquartile Range (IQR = Q3 - Q1). Outliers fall below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR, providing a robust approach less sensitive to extreme values.
+2. **Percentile Method (IQR)**: Calculate the first quartile (Q1) and third quartile (Q3). Compute the interquartile range (IQR) as Q3 - Q1. Define lower bound as Q1 - 1.5 * IQR and upper bound as Q3 + 1.5 * IQR. Keep only the data points within this range.
 
 3. **IQR (Interquartile Range) Method**: Similar to the percentile method but without recalculating quartiles, directly utilizing Q1 and Q3 to define outlier boundaries.
 
-4. **Normal Distribution (Z-score)**: Computes Z-scores for each data point, representing their deviation from the mean in terms of standard deviations. Outliers are identified as data points with Z-scores exceeding a predefined threshold (e.g., 3), assuming a normal distribution.
+4. **Normal Distribution (Z-score)**:Calculate the z-score for each data point using the formula: Z-score =(X−mean)/standard deviation
 
-5. **Z-score Method**: Similar to the normal distribution method, calculating Z-scores for outlier identification. However, this method is more versatile, applicable to distributions beyond normality.
+Define a threshold (commonly 3). Keep only the data points with absolute z-scores less than the threshold.
+
+5. **Z-score Method**: Same steps as Normal Distribution but without the absolute value.
 
 Each method carries its strengths and limitations, necessitating careful consideration of the data characteristics and analytical requirements. By employing appropriate outlier detection techniques, analysts can enhance the accuracy and validity of their analyses, facilitating informed decision-making based on dependable data.
